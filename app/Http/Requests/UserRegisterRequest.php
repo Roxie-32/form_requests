@@ -32,7 +32,7 @@ class UserRegisterRequest extends FormRequest
         
     }
 
-    public function message()
+    public function messages()
     {
         return [
             'email.required'=>'Email Is Required',
