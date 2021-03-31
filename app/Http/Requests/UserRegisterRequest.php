@@ -23,27 +23,26 @@ class UserRegisterRequest extends FormRequest
      */
     public function rules()
     {
-    
-            return [
-                'email'=>'required|email|bail|unique:users',
-                'username' => 'required|bail',
-                'password'=>'required|bail'
-            ];
-        
+
+        return [
+            'email' => 'required|email|bail|unique:users',
+            'username' => 'required|bail',
+            'password' => 'required|bail',
+        ];
     }
 
     public function messages()
     {
         return [
-            'email.required'=>'Email Is Required',
-            'email.email'=>'Enter a valid Email',
-            'email.bail'=>'Email Is Required',
-            'email.unique:users'=>'Email has been Taken',
-            'username.required'=>'Username Is Required',
-            'username.bail'=>'Username Is Required',
-            'password.required'=>'Password Is Required',
-            'password.bail'=>'Password Is Required'
-            
+            'email.required' => 'Email Is Required',
+            'email.email' => 'Enter a valid Email',
+            'email.bail' => 'Email Is Required',
+            'email.unique:users' => 'Email has been Taken',
+            'username.required' => 'Username Is Required',
+            'username.bail' => 'Username Is Required',
+            'password.required' => 'Password Is Required',
+            'password.bail' => 'Password Is Required',
+
 
 
         ];
