@@ -37,7 +37,7 @@ class UserRegisterRequest extends FormRequest
             'email.required' => 'Email Is Required',
             'email.email' => 'Enter a valid Email',
             'email.bail' => 'Email Is Required',
-            'email.unique:users' => 'Email has been Taken',
+            'email.unique' => 'Email has been Taken',
             'username.required' => 'Username Is Required',
             'username.bail' => 'Username Is Required',
             'password.required' => 'Password Is Required',
